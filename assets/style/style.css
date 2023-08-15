@@ -1,0 +1,904 @@
+Reset de estilos
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #282828;
+}
+
+html {
+    font-size: 10px;
+    background-color: #f6f6f6;
+}
+
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+    margin-top: 12vh
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header y Navbar */
+header {
+    position: absolute;
+    align-items: center;
+    background-color: #020305;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 15vh;
+    z-index: 999;
+    
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    height: 100%;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+}
+
+nav ul li {
+    color: #ce6b11;
+    margin-right: 20px;
+    flex-shrink: 0;
+    height: 100%;
+    list-style: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ce6b11;
+    height: 100%;
+    padding: 0 0.4rem;
+    font-size: 1.5rem;
+}
+
+nav ul li a:hover {
+    background-color: #ce6b11;
+    color: #f3e5d8;
+    box-shadow: 0.1rem 0.1rem 0.5rem orange
+}
+
+.nav-list-container {
+    display: none;
+    background-color: #ce6b11;
+    width: 100%;
+    position: fixed;
+
+    left: 0;
+    height: 260px;
+}
+
+.nav-list-container.active {
+    display: block;
+}
+
+
+/* Logo y slogan: */
+.brand__container {
+    display:flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    align-items: center;
+    height: 100%;
+    
+}
+
+.logo {
+    flex: 0 0 auto;
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/logo.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* Titulo bajo el logo */
+
+.header__title {
+    flex-grow: 1;
+    
+    
+}
+
+.header__title h1 {
+    color: #FAFAFA;
+    font-size: 2.5vh;
+    font-weight: bold;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.header__title h3 {
+    font-size: 2vh;
+    color: #ce6b11;
+    white-space: nowrap;
+    overflow: hidden;
+    overflow: hidden;
+}
+
+/* Menu Hamburguesa */
+
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    width: 30px;
+    cursor: pointer;
+    z-index: 2;
+    background-color: #000000;
+    border-radius: 5px;
+    align-self: flex-start;
+}
+
+.bar {
+    height: 1px;
+    width: 20px;
+    padding:    2px;
+    margin: 2px auto;
+    background-color: #ce6b11;
+    transition: 0.4s;
+}
+
+.menu-toggle:hover  {
+    background-color: #ce6b11;
+}
+.menu-toggle:hover .bar  {
+    background-color: #f2f2f2;
+}
+
+
+
+/* Main */
+
+main{
+    display: flex;
+    justify-content: center;
+    padding: 2rem 0;
+    min-height: 80vh;
+}
+
+/* Estilos grilla */
+
+.index-content h1{
+    font-size: 3rem;
+    padding-top: 5rem;
+    padding-left: 3rem;
+}
+
+.products-grid {
+    margin: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.products-grid h1 {
+    font-size: 2rem;
+    font-weight: bolder;
+    color: #282828;
+    text-align: center;
+}
+
+.products-grid h2 {
+    font-size: 1.5rem;
+    font-weight: bolder;
+    color: #282828;
+    text-align: center;
+}
+
+.producto-card {
+    background-color: #FFFFFF;
+    border-radius: 5%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.producto-card:hover {
+    background-color: #FFFFFF;
+    border: 0.1rem solid #ce6b11;
+    border-color: #ce6b11;
+    
+}
+
+.producto-card img {
+    width: 100%;
+    height: auto;
+}
+
+.producto-card h2 {
+    margin: 10px 0;
+}
+
+.producto-card p {
+    margin: 5px 0;
+}
+
+.producto-card img {
+    height: auto;
+    width: 60%;
+}
+
+
+/* Estilos de las imágenes */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+/* Reset para el margen y el padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Footer */
+footer {
+    width: 100%;
+    background-color: #020305;
+    min-height: 20vh;
+    padding: 1rem 0;
+}
+
+.contact {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.2rem;
+    padding: 1rem;
+}
+.contact * {
+    margin: 1rem;
+}
+.contact iframe {
+    border-radius: 1rem;
+    box-shadow: 0.2rem 0.2rem 0.5rem orange;
+    height: 8rem;
+    width: 24rem;
+    
+}
+.contact p {
+    color: orange;
+}
+.contact a {
+    color: orange;
+    text-decoration: none;
+}
+.contact button {
+    padding: 0.4rem 0.2;
+    box-shadow: 0.2rem 0.2rem 0.5rem orange
+}
+.contact button:hover {
+    cursor: pointer;
+}
+.social__Media {
+    text-align: center;
+}
+.social__Media a{
+    margin-right: 1rem;
+}
+
+
+/* Pagina Productos */
+
+
+.product__section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: 
+        "title title"
+        "img review"
+        "img detail"
+        "img price"
+        "img discount";
+    grid-gap: 20px;
+    margin: 20px;
+}
+
+.product__section .product-title {
+    margin-top: 3rem;
+}
+
+.product__section p span {
+    font-size: 1.2rem;
+    font-weight: bold;
+    display: block;
+}
+
+.product__section img {
+    grid-area: img;
+    max-width: 100%;
+    border: solid #ce6b11;
+    border-radius: 5%;
+    width: 90%;
+}
+
+.product__section h2 {
+    grid-area: title;
+}
+
+.product__section .product-review {
+    grid-area: review;
+}
+
+.product__section .product-detail {
+    grid-area: detail;
+}
+
+.product__section .product-price {
+    grid-area: price;
+}
+
+.product__section .product-discount {
+    grid-area: discount;
+}
+
+.product__section .product-price, .product__section .product-discount, .product__section h2, .product__section .product-review, .product__section .product-detail {
+    padding: 10px;
+    background-color: #f6f6f6;
+}
+
+.product__section .product-price {
+    color: green;
+    font-size: 24px;
+}
+
+.product__section .product-discount {
+    color: red;
+    font-size: 18px;
+}
+
+
+
+
+
+/* Pagina Como comprar */
+
+.buy__section {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    font-size: 1.4rem;
+    padding: 3rem;
+}
+.buy__section h2 {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+.buy__section p {
+    color: orange;
+    font-weight: bold;
+}
+.buy__section ol {
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+}
+.buy__section ol li {
+    margin-top: 1rem;
+}
+.buy__section form {
+    align-self: center ;
+    width: 60%;
+}
+.buy__section form fieldset {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+.buy__section form fieldset legend {
+    color: orange;
+}
+.buy__section form fieldset label {
+    margin-top: 1rem;
+}
+.buy__section form fieldset input {
+    border: orange 2px solid;
+    margin-top: 0.3rem;
+
+}
+.buy__section form fieldset input::placeholder {
+    color: orange;
+    padding-left: 2rem;
+}
+.buy__section form fieldset textarea {
+    border: orange 2px solid;
+    margin-top: 0.3rem;
+}
+.buy__section form fieldset textarea::placeholder {
+    color: orange;
+    padding-left: 2rem;
+    padding-top: 1rem;
+}
+.submit {
+    background-color: orange;
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+    height: 3rem;
+    width: 100%;
+} 
+.submit:hover {
+    cursor: pointer;
+}
+
+.buy__content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+
+
+
+
+/* Pagina Nuestras Marcas */
+
+.our__associates {
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    width: 100%;
+}
+
+.our__associates h2 {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    width: 100%;
+    text-align: center;
+}
+
+.associated__brands {
+    align-items: center;
+    margin-top: 12rem;
+    border-top: orange 5px solid;
+    border-bottom: orange 5px solid;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+    justify-items: center;
+    
+    
+}
+
+.sony {
+    
+    height: auto;
+    width: 20vh;
+}
+.canon {
+    height: auto;
+    width: 20vh;
+}
+.fuji {
+    height: auto;
+    width: 20vh;
+}
+.prof {
+    height: auto;
+    width: 20vh;
+}
+
+
+
+
+
+/* pagos y transferencias */
+
+.payment__content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 2rem;
+}
+.payment__gateway {
+    align-items: center;
+    background-color: navy;
+    color: aliceblue;
+    display: flex;
+    height: 5rem;
+    justify-content: space-between;
+    margin-bottom: 8rem;
+    margin-top: 8rem;
+    padding: 3rem;
+}
+.payment__gateway p {
+    font-size: 2rem;
+    color: #ded7ee;
+}
+.payment__gateway button {
+    background-color: lightgray;
+}
+.payment__gateway button:hover {
+    cursor: pointer;
+}
+.payment__transfer {
+    border: navy 0.3rem solid;
+    color: gray;
+    font-size: 1.8rem;
+    padding: 1rem;
+}
+
+
+
+/* contact page */
+.contact__container {
+    padding: 2rem;
+    align-items: center;
+    background-color: orange;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: space-around;
+}
+.sm__contact {
+    display: flex;
+    flex-direction: column;
+}
+.sm__contact a img{
+    height: 5rem;
+    margin-bottom: 4rem;
+    width: 5rem;
+}
+.contact__form fieldset {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+
+.contact__form fieldset label {
+    margin-top: 2rem;
+}
+.contact__form fieldset input {
+    border-radius: 1rem;
+    margin-top: 0.5rem;
+} 
+
+
+.contact__form fieldset .submit:hover {
+    background-color: #020305;
+    color:#ce6b11
+} 
+.contact__form fieldset input::placeholder {
+    color: gray;
+    padding-left: 1rem;
+}
+.contact__form fieldset textarea {
+    border-radius: 1rem;
+}
+.contact__form fieldset textarea::placeholder {
+    color:gray;
+    padding-left: 1rem;
+    padding-top: 1rem;
+}
+.contact__iframe {
+    border-radius: 3rem;
+    height:30rem;
+    width: 30rem;
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 1366px) {
+
+    
+
+    nav {
+        font-size: 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    nav ul {
+        display: flex;
+    }
+
+    nav ul li {
+        color: orange;
+        list-style: none;
+        margin-right: 1rem;
+    }
+
+    nav ul li a {
+        text-decoration: none;
+        padding: 0 0.4rem;
+        font-size: 1.4rem;
+    }
+
+
+    ul#nav-list {
+        align-self: center;
+    }
+
+    .brand__container {
+    display:flex;
+    justify-content:center;
+    flex-direction: row;
+    align-items: center;
+    }
+    
+    .logo {
+        order: -1;
+        margin-bottom: 6px;
+        flex: 0 0 auto;
+        height: 7vh;
+    }
+
+      .header__title {
+        order: 2;
+        text-align: center;
+        margin-left: 0;
+        flex-grow: 0;
+    }
+
+    .header__title h1 {
+        font-size: 2vh;
+    }
+    
+    .header__title h3 {
+        font-size: 1.5vh;
+    }
+
+    .products-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+
+    .buy__content {
+        grid-template-columns: 1fr;
+    }
+
+    .contact__container {
+        grid-template-columns: 1fr 1fr;
+        justify-content: space-around;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .sm__contact {
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .sm__contact a img{
+        margin-top: 4rem;
+
+    }
+    .contact__form fieldset {
+        margin-top: 2rem;
+        margin-bottom: 5rem;
+    }
+
+
+    .contact__iframe {
+        justify-self: center;
+        border-radius: 3rem;
+        height:20rem;
+        width: 80%;
+        grid-column: 1 / 3;
+    }
+
+
+}
+
+
+/* Media queries para moviles */
+@media screen and (max-width: 768px) {
+    header {
+        position: fixed;
+    }
+
+    .menu-toggle {
+        display: inline-flex;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0px;
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        position: fixed;
+        background-color: #f2f2f2;
+        left: 0;
+        left: 0;
+        z-index: 998;
+    }
+
+    nav ul li {
+        margin-right: 0;
+        margin-bottom: 20px;
+        width: 100%;
+        text-align: center;
+    }
+
+    nav ul li a {
+        font-size: 1.2rem;
+    }
+
+    nav ul.active {
+        display: flex;
+        padding-top: 100px;
+    }
+
+    .brand__container {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        order: 2;
+    }
+
+    .menu-toggle {
+        position: absolute;
+        top: 10px;
+        right: 20px;
+        order: 1;
+        z-index: 999;
+    }
+
+    .logo {
+        order: -1;
+        margin-bottom: 6px;
+        flex: 0 0 auto;
+        height: 7vh;
+      }
+
+    .header__title {
+        order: 2;
+        text-align: center;
+        margin-left: 0;
+        flex-grow: 0;
+    }
+
+    .header__title h1 {
+        font-size: 2vh;
+    }
+
+    .header__title h3 {
+        font-size: 1.5vh;
+    }
+
+    .index-content h1{
+        font-size: 3rem;
+        text-align: center;
+    }
+
+    .products-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+
+    .product-card {
+        border-radius: 15%;
+    }
+
+
+
+
+    .contact {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .contact * {
+        margin-bottom: 2rem;
+    }
+
+    .contact button {
+        margin: 0px;
+    }
+
+
+
+
+
+    /* Pagina Productos */
+
+    .product__section {
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+            "title"
+            "img"
+            "review"
+            "detail"
+            "price"
+            "discount";
+    }
+
+
+
+    .product__section img {
+        justify-self: center;
+    }
+
+    .product-title {
+        font-size: 2.7rem;
+    }
+
+
+
+
+
+
+    /* Pagina Como comprar y pagos y transferencias */
+
+    .buy__content {
+        grid-template-columns: 1fr;
+    }
+
+    .payment__content {
+        grid-template-columns: 1fr;
+    }
+
+    /* Pagina Nuestras Marcas */
+    .associated__brands {
+        grid-template-columns: 1fr;
+        margin-top: 6rem;
+        border-top: orange 5px solid;
+        border-bottom: orange 5px solid;
+    }
+
+
+
+    .contact__container {
+        grid-template-columns: 1fr;
+        justify-content: space-around;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .sm__contact {
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+    }
+    .sm__contact a img{
+        margin-top: 4rem;
+
+    }
+    .contact__form fieldset {
+        margin-top: 2rem;
+    }
+
+
+    .contact__iframe {
+        justify-self: center;
+        border-radius: 3rem;
+        height:20rem;
+        width: 80%;
+    }
+
+}
+
+/**************************/

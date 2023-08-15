@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+
+.floating-container {
+    position: fixed;
+    width: 100px;
+    height: 68px;
+    bottom: 0;
+    right: 0;
+    margin: 25px 25px 25px 25px;
+
+}
+.floating-container:hover {
+    height: 68px;      
+}
+.floating-container:hover .floating-button {
+    box-shadow: 0 10px 25px rgba(60, 240, 44, 0.6);
+    -webkit-transform: translatey(5px);
+            transform: translatey(5px);
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+}
+.floating-container .floating-button {
+    position: absolute;
+    width: 65px;
+    height: 65px;
+    background: #36ac40;
+    bottom: 0;
+    border-radius: 50%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    color: white;
+    line-height: 65px;
+    text-align: center;
+    font-size: 23px;
+    z-index: 100;
+    box-shadow: 0 10px 25px -5px rgba(33, 43, 31, 0.6);
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    border: 0px;
+
+
+}
+
+
+.floating-container .floating-button .button__badge{
+    background-color: #fa3e3e;
+    border-radius: 50%;
+    line-height: 18px;
+    width: 20px;
+    height: 20px;
+    padding: 1px 3px;
+    font-size: 8px;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  .blur-out{
+    animation:blur-out 0.4s linear both} 
+
+    @keyframes blur-out{
+        0%{filter:blur(.01px);}100%{filter:blur(12px);opacity:0}
+    }
+
+    .blur-in{
+        animation:blur-in 0.4s linear both
+    } 
+        @keyframes blur-in{
+            0%{filter:blur(12px);opacity:0}100%{filter:blur(0);opacity:1}
+        }
+
+  

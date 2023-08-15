@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="./assets/style/style.css"> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/style/card.css">
+    <link rel="stylesheet" href="./assets/style/navbar.css">
+    <link rel="stylesheet" href="./assets/style/floatingbutton.css">
+    <link rel="shortcut icon" href="/m2/assets/img/logo.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Fénix</title>
+</head>
+
+<body class="bg-secondary-subtle">
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-darky">
+            <div class="container-fluid"> 
+                <a class="navbar-brand" href="./index.html">
+                    <div class="d-flex align-items-center">
+                        <div class="bg-image"></div>
+                        <div class="brand-title ms-2"> 
+                            <h1 class="mb-0">Fénix Studio</h1>
+                            <p class="mb-0">Renace la fotografía</p>
+                        </div>
+                    </div>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link selected" href="#">Inicio</a> 
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./assets/pages/distributedBrands.html">Marcas Distibuídas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./assets/pages/paymentsTransfers.html">Metodos de Pago</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./assets/pages/estadisticas.html">Estadísticas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./assets/pages/contact.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container-fluid px-5">
+        <h1 style="text-align: center; margin-top: 15px">Productos en stock</h1>
+        <div class="row">
+            <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3 py-3 px-2">
+                <div class="card h-100">
+                    <div class="card-body card-producto">
+                        <a href="./assets/pages/prdct1.html" class="text-decoration-none">
+                            <img src="./assets/img/Primary_Image-2.webp" class="mx-auto card-img-top img-fluid"
+                                alt="CÁMARA REFLEX ILCE-7M3K">
+                            <h5 class="card-title text-warning-emphasis">
+                                CÁMARA REFLEX ILCE-7M3K
+                            </h5> <br>
+                            <div class="card-details">
+                                <p class="card-text text-light-emphasis card-code">Código: prdct1</p>
+                                <p class="card-text text-success card-price">Precio: <span class="precio">$1.709.990</span></p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="card-footer">
+                        <div class="d-flex bd-highlight">
+                            <div class="p-2 flex-grow-1 bd-highlight">
+                                <div class="input-group col-6">
+                                    <div class="input-group-prepend">
+                                        <button class="btn btn-outline-secondary" type="button"
+                                            onclick="modificarCantidad('valor_input1', -1, 'addToCart1')">-</button>
+                                    </div>
+                                    <input class="form-control" name="qty" id="valor_input1" type="number" value="0" max="99" min="0" onchange="cambioValor('valor_input1','addToCart1')">
+                                    <div class="input-group-append">
+                                        <button class="btn btn-outline-secondary" type="button"
+                                            onclick="modificarCantidad('valor_input1', 1, 'addToCart1')">+</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="p-2 bd-highlight">
+                                <button name="addToCartBtn" id="addToCart1" onclick="agregarBtn('addToCart1', 'valor_input1')" class="btn btn-primary btn-comprar " disabled>Añadir al carro</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3 py-3 px-2">
+                <div class="card h-100">
+                    <div class="card-body card-producto">
+                        <a class="text-decoration-none" href="./assets/pages/prdct2.html">
+                            <img src="./assets/img/388078-1200-auto.webp" class="card-img-top img-fluid p-3"
+                                alt="CÁMARA SONY A6100 + LENTE 16-50MM">
+                            <h5 class="card-title text-warning-emphasis">
+                                CÁMARA SONY A6100 + LENTE 16-50MM
+                            </h5> <br>
+                            <div class="card-details">
+                                <p class="card-text text-light-emphasis card-code">Código: prdct2</p>
+                                <p class="card-text text-success card-price">Precio: <span class="precio">$744.790</span></p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="card-footer">
+                        <div class="d-flex bd-highlight">
+                            <div class="p-2 flex-grow-1 bd-highlight">
+                                <div class="input-group col-6">
+                                    <div class="input-group-prepend">
+                                        <button class="btn btn-outline-secondary" type="button"
+                                            onclick="modificarCantidad('valor_input2', -1, 'addToCart2')">-</button>
+                                    </div>
+                                    <input class="form-control" name="qty" id="valor_input2" type="number" value="0" max="99" min="0" onchange="cambioValor('valor_input2','addToCart2')">
+                                    <div class="input-group-append">
+                                        <button class="btn btn-outline-secondary" type="button"
+                                            onclick="modificarCantidad('valor_input2', 1, 'addToCart2')">+</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="p-2 bd-highlight">
+                                <button name="addToCartBtn" id="addToCart2" onclick="agregarBtn('addToCart2', 'valor_input2')" class="btn btn-primary btn-comprar" disabled>Añadir al carro</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3 py-3 px-2">
+                <div class="card h-100">
+                    <div class="card-body card-producto">
+                        <a href="./assets/pages/prdct3.html" class="text-decoration-none">
+                            <img src="./assets/img/392490-1200-auto.webp" class="card-img-top img-fluid p-3"
+                                alt="CÁMARA FUJIFILM X-T5 BLACK + LENTE XF 18-55MM" >
+                            <h5 class="card-title text-warning-emphasis">
+                                CÁMARA FUJIFILM X-T5 BLACK + LENTE XF 18-55MM
+                            </h5>
+                             <br>
+                            <div class="card-details">
+                                <p class="card-text text-light-emphasis card-code">Código: prdct3</p>
+                                <p class="card-text text-success card-price">Precio: <span class="precio">$2.265.402</span></p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="card-footer">
+                        <div class="d-flex bd-highlight">
+                            <div class="p-2 flex-grow-1 bd-highlight">
+                                <div class="input-group col-6">
+                                    <div class="input-group-prepend">
+                                        <button class="btn btn-outline-secondary" type="button"
+                                            onclick="modificarCantidad('valor_input3', -1, 'addToCart3')">-</button>
+                                    </div>
+                                    <input class="form-control" name="qty" id="valor_input3" type="number" value="0" max="99" min="0" onchange="cambioValor('valor_input3','addToCart3')">
+                                    <div class="input-group-append">
+                                        <button class="btn btn-outline-secondary" type="button"
+                                            onclick="modificarCantidad('valor_input3', 1, 'addToCart3')">+</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="p-2 bd-highlight">
+                                <button name="addToCartBtn" id="addToCart3" onclick="agregarBtn('addToCart3', 'valor_input3')" class="btn btn-primary btn-comprar" disabled>Añadir al carro</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3 py-3 px-2">
+                <div class="card h-100">
+                    <div class="card-body card-producto">
+                        <a href="./assets/pages/prdct4.html" class="text-decoration-none">
+                            <img src="./assets/img/386559-1200-auto.webp" class="card-img-top img-fluid p-3"
+                                alt="CÁMARA FUJIFILM MIRRORLESS X-T30 MK II SILVER BODY" >
+                            <h5 class="card-title text-warning-emphasis">
+                                CÁMARA FUJIFILM MIRRORLESS X-T30 MK II SILVER BODY
+                            </h5> <br>
+                            <div class="card-details">
+                                <p class="card-text text-light-emphasis card-code">Código: prdct4</p>
+                                <p class="card-text text-success card-price">Precio: <span class="precio">$949.900</span></p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="card-footer">
+                        <div class="d-flex bd-highlight">
+                            <div class="p-2 flex-grow-1 bd-highlight">
+                                <div class="input-group col-6">
+                                    <div class="input-group-prepend">
+                                        <button class="btn btn-outline-secondary" type="button"
+                                            onclick="modificarCantidad('valor_input4', -1, 'addToCart4')">-</button>
+                                    </div>
+                                    <input class="form-control" name="qty" id="valor_input4" type="number" value="0" max="99" min="0" onchange="cambioValor('valor_input4','addToCart4')">
+                                    <div class="input-group-append">
+                                        <button class="btn btn-outline-secondary" type="button"
+                                            onclick="modificarCantidad('valor_input4', 1, 'addToCart4')">+</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="p-2 bd-highlight">
+                                <button name="addToCartBtn" id="addToCart4" onclick="agregarBtn('addToCart4', 'valor_input4')" class="btn btn-primary btn-comprar" disabled>Añadir al carro</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3 py-3 px-2">
+                <div class="card h-100">
+                    <div class="card-body card-producto">
+                        <a href="./assets/pages/prdct5.html" class="text-decoration-none">
+                            <img src="./assets/img/395920-1200-auto.webp" class="card-img-top img-fluid p-3"
+                                alt="CÁMARA CANON MIRRORLESS EOS R7 + 18-150 F/3.5-6.3 IS STM" >
+                            <h5 class="card-title text-warning-emphasis">
+                                CÁMARA CANON MIRRORLESS EOS R7 + 18-150 F/3.5-6.3 IS STM
+                            </h5> <br>
+                            <div class="card-details">
+                                <p class="card-text text-light-emphasis card-code">Código: prdct5</p>
+                                <p class="card-text text-success card-price">Precio: <span class="precio">$1.919.990</span></p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="card-footer">
+                        <div class="d-flex bd-highlight">
+                            <div class="p-2 flex-grow-1 bd-highlight">
+                                <div class="input-group col-6">
+                                    <div class="input-group-prepend">
+                                        <button class="btn btn-outline-secondary" type="button"
+                                            onclick="modificarCantidad('valor_input5', -1, 'addToCart5')">-</button>
+                                    </div>
+                                    <input class="form-control" name="qty" id="valor_input5" type="number" value="0" max="99" min="0" onchange="cambioValor('valor_input5','addToCart5')">
+                                    <div class="input-group-append">
+                                        <button class="btn btn-outline-secondary" type="button"
+                                            onclick="modificarCantidad('valor_input5', 1, 'addToCart5')">+</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="p-2 bd-highlight">
+                                <button name="addToCartBtn" id="addToCart5" onclick="agregarBtn('addToCart5', 'valor_input5')" class="btn btn-primary btn-comprar" disabled>Añadir al carro</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3 py-3 px-2">
+                <div class="card h-100">
+                    <div class="card-body card-producto">
+                        <a href="./assets/pages/prdct6.html" class="text-decoration-none">
+                            <img src="./assets/img/407020-1200-auto.webp" class="card-img-top img-fluid p-3"
+                                alt="CÁMARA CANON EOS M50 MARK II EF-M + LENTE 15-45MM F/3.5-6.3" >
+                            <h5 class="card-title text-warning-emphasis">
+                                CÁMARA CANON EOS M50 MARK II EF-M + LENTE 15-45MM F/3.5-6.3
+                            </h5> <br>
+                            <div class="card-details">
+                                <p class="card-text text-light-emphasis card-code">Código: prdct6</p>
+                                <p class="card-text text-success card-price">Precio: <span class="precio">$671.990</span></p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="card-footer">
+                        <div class="d-flex bd-highlight">
+                            <div class="p-2 flex-grow-1 bd-highlight">
+                                <div class="input-group col-6">
+                                    <div class="input-group-prepend">
+                                        <button class="btn btn-outline-secondary" type="button"
+                                            onclick="modificarCantidad('valor_input6', -1, 'addToCart6')">-</button>
+                                    </div>
+                                    <input class="form-control" name="qty" id="valor_input6" type="number" value="0" max="99" min="0" onchange="cambioValor('valor_input6','addToCart6')">
+                                    <div class="input-group-append">
+                                        <button class="btn btn-outline-secondary" type="button"
+                                            onclick="modificarCantidad('valor_input6', 1, 'addToCart6')">+</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="p-2 bd-highlight">
+                                <button name="addToCartBtn" id="addToCart6" onclick="agregarBtn('addToCart6', 'valor_input6')" class="btn btn-primary btn-comprar" disabled>Añadir al carro</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3 py-3 px-2">
+                <div class="card h-100">
+                    <div class="card-body card-producto">
+                        <a href="./assets/pages/prdct7.html" class="text-decoration-none">
+                            <img src="./assets/img/254706_e_profoto-rfi-softbox-2x2-angle_productimage.jfif"
+                                class="card-img-top img-fluid p-3" alt="RFi Softbox 2x2' (60x60cm)" >
+                            <h5 class="card-title text-warning-emphasis">
+                                RFi Softbox 2x2' (60x60cm)
+                            </h5> <br>
+                            <div class="card-details">
+                                <p class="card-text text-light-emphasis card-code">Código: prdct7</p>
+                                <p class="card-text text-success card-price">Precio: <span class="precio">$949.900</span></p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="card-footer">
+                        <div class="d-flex bd-highlight">
+                            <div class="p-2 flex-grow-1 bd-highlight">
+                                <div class="input-group col-6">
+                                    <div class="input-group-prepend">
+                                        <button class="btn btn-outline-secondary" type="button"
+                                            onclick="modificarCantidad('valor_input7', -1, 'addToCart7')">-</button>
+                                    </div>
+                                    <input class="form-control" name="qty" id="valor_input7" type="number" value="0" max="99" min="0" onchange="cambioValor('valor_input7','addToCart7')">
+                                    <div class="input-group-append">
+                                        <button class="btn btn-outline-secondary" type="button"
+                                            onclick="modificarCantidad('valor_input7', 1, 'addToCart7')">+</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="p-2 bd-highlight">
+                                <button name="addToCartBtn" id="addToCart7" onclick="agregarBtn('addToCart7', 'valor_input7')" class="btn btn-primary btn-comprar" disabled>Añadir al carro</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3 py-3 px-2">
+                <div class="card h-100">
+                    <div class="card-body card-producto">
+                        <a href="./assets/pages/prdct8.html" class="text-decoration-none">
+                            <img src="./assets/img/254715_e_profoto-rfi-softbox-4-octa-angle_productimage.jfif"
+                                class="card-img-top img-fluid p-3"
+                                alt="CÁMARA FUJIFILM X-T5 BLACK + LENTE XF 18-55MM" >
+                            <h5 class="card-title text-warning-emphasis">
+                                RFi Softbox 4' (120cm) Octa
+                            </h5> <br>
+                            <div class="card-details">
+                                <p class="card-text text-light-emphasis card-code">Código: prdct8</p>
+                                <p class="card-text text-success card-price">Precio: <span class="precio">$409.000</span></p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="card-footer">
+                        <div class="d-flex bd-highlight">
+                            <div class="p-2 flex-grow-1 bd-highlight">
+                                <div class="input-group col-6">
+                                    <div class="input-group-prepend">
+                                        <button class="btn btn-outline-secondary" type="button"
+                                            onclick="modificarCantidad('valor_input8', -1, 'addToCart8')">-</button>
+                                    </div>
+                                    <input class="form-control" name="qty" id="valor_input8" type="number" value="0" max="99" min="0" onchange="cambioValor('valor_input8','addToCart8')">
+                                    <div class="input-group-append">
+                                        <button class="btn btn-outline-secondary" type="button"
+                                            onclick="modificarCantidad('valor_input8', 1, 'addToCart8')">+</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="p-2 bd-highlight">
+                                <button name="addToCartBtn" id="addToCart8" onclick="agregarBtn('addToCart8', 'valor_input8')" class="btn btn-primary btn-comprar" disabled>Añadir al carro</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3 py-3 px-2">
+                <div class="card h-100">
+                    <div class="card-body card-producto">
+                        <a href="./assets/pages/prdct9.html" class="text-decoration-none">
+                            <img src="./assets/img/901250_b_a2_45.jfif" class="card-img-top img-fluid p-3"
+                                alt="Profoto A2" >
+                            <h5 class="card-title text-warning-emphasis">Profoto A2</h5> <br>
+                            <div class="card-details">
+                                <p class="card-text text-light-emphasis card-code">Código: prdct9</p>
+                                <p class="card-text text-success card-price">Precio: <span class="precio">$1.095.000</span></p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="card-footer">
+                        <div class="d-flex bd-highlight">
+                            <div class="p-2 flex-grow-1 bd-highlight">
+                                <div class="input-group col-6">
+                                    <div class="input-group-prepend">
+                                        <button class="btn btn-outline-secondary" type="button"
+                                            onclick="modificarCantidad('valor_input9', -1, 'addToCart9')">-</button>
+                                    </div>
+                                    <input class="form-control" name="qty" id="valor_input9" type="number" value="0" max="99" min="0" onchange="cambioValor('valor_input9','addToCart9')">
+                                    <div class="input-group-append">
+                                        <button class="btn btn-outline-secondary" type="button"
+                                            onclick="modificarCantidad('valor_input9', 1, 'addToCart9')">+</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="p-2 bd-highlight">
+                                <button name="addToCartBtn" id="addToCart9" onclick="agregarBtn('addToCart9', 'valor_input9')" class="btn btn-primary btn-comprar" disabled>Añadir al carro</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3 py-3 px-2">
+                <div class="card h-100">
+                    <div class="card-body card-producto">
+                        <a href="./assets/pages/prdct10.html" class="text-decoration-none">
+                            <img src="./assets/img/901194_a_b10x_duo.jfifX2.jfif" class="card-img-top img-fluid p-3"
+                                alt="Profoto B10X" >
+                            <h5 class="card-title text-warning-emphasis">
+                                Profoto B10X Set 2 unidades
+                            </h5> <br>
+                            <div class="card-details">
+                                <p class="card-text text-light-emphasis card-code">Código: prdct10</p>
+                                <p class="card-text text-success card-price">Precio: <span class="precio">$2.199.990</span></p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="card-footer">
+                        <div class="d-flex bd-highlight">
+                            <div class="p-2 flex-grow-1 bd-highlight">
+                                <div class="input-group col-6">
+                                    <div class="input-group-prepend">
+                                        <button class="btn btn-outline-secondary" type="button"
+                                            onclick="modificarCantidad('valor_input10', -1, 'addToCart10')">-</button>
+                                    </div>
+                                    <input class="form-control" name="qty" id="valor_input10" type="number" value="0" max="99" min="0" onchange="cambioValor('valor_input10','addToCart10')">
+                                    <div class="input-group-append">
+                                        <button class="btn btn-outline-secondary" type="button"
+                                            onclick="modificarCantidad('valor_input10', 1, 'addToCart10')">+</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="p-2 bd-highlight">
+                                <button name="addToCartBtn" id="addToCart10" onclick="agregarBtn('addToCart10', 'valor_input10')" class="btn btn-primary btn-comprar" disabled>Añadir al carro</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Agrega más cards para los demás productos -->
+        </div>
+    </div>
+
+    
+    <div class="floating-container" >
+        <button class="floating-button hidden" id="botonCarrito" data-bs-toggle="modal" data-bs-target="#listaCompra" onclick="desplegarProuctos()" style="display: none;">
+            <span id="contador" class="button__badge" >0</span>
+            <i class="material-icons" >shopping_cart</i>
+        </button>
+    </div>
+
+
+<!-- Modal -->
+<div class="modal fade" id="listaCompra" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="listaCompraLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable ">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="listaCompraLabel">Carrito de compras</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" onclick="resetList()"></button>
+        </div>
+        <div class="modal-body">
+          <div id="listaProd">
+            
+          </div>
+        </div>
+        <div class="modal-footer d-flex">
+            <p class="p-2 flex-fill">Total: <span id="precioTotal"></span></p>
+          <button type="submit" class="btn btn-outline-secondary" data-bs-dismiss="modal" onclick="resetList()">Cancelar</button>
+          <a href="./assets/pages/despacho.html">
+            <button type="button" class="btn btn-success">Ir al Pago</button>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+    <footer class="bg-black text-white pt-4 pb-4 col-12">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="embed-responsive embed-responsive-16by9 mb-3">
+                        <iframe class="embed-responsive-item rounded"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2768.6525177838716!2d-71.24528907136963!3d-32.89676177821409!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9689d27b8ccfb0fd%3A0xd5874354ea38de4d!2sMall%20Shopping%20Center%20Quillota!5e0!3m2!1ses!2scl!4v1684769970629!5m2!1ses!2scl"
+                            style="border: 0" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                    <p class="text-warning mb-1">
+                        Av Carlos Condell 1687, Mall Shopping Center Quillota, local B-42,
+                        Quillota, Valparaíso, Chile
+                    </p>
+                </div>
+                <div class="col-lg-6">
+                    <a class="d-flex align-items-center mb-3 text-decoration-none" href="www.facebook.com"
+                        target="_blank">
+                        <img class="d-block" src="./assets/img/icon-facebook.svg" alt="Logo de Facebook" >
+                        <span class="text-white ml-3" style="padding-left: 0.5rem">
+                            /FenixStudio
+                        </span>
+                    </a>
+
+                    <a class="d-flex align-items-center mb-3 text-decoration-none" href="www.instagram.com"
+                        target="_blank">
+                        <img class="d-block" src="./assets/img/icon-instagram.svg" alt="Logo de Instagram" >
+                        <span class="text-white ml-3" style="padding-left: 0.5rem">
+                            @fenixstudio
+                        </span>
+                    </a>
+
+                    <a class="d-flex align-items-center mb-3 text-decoration-none" href="www.youtube.com"
+                        target="_blank">
+                        <img class="d-block" src="./assets/img/icon-youtube.svg" alt="Logo de Youtube" >
+                        <span class="text-white ml-3" style="padding-left: 0.5rem">Fenix Studio
+                        </span>
+                    </a>
+
+                    <a class="text-warning mb-1 d-block" href="mailto:contacto@fotofenix.com">Email:
+                        contacto@fotofenix.com</a>
+                    <a href="https://drive.google.com/file/d/1GFuOFd23D8JOjVmNAS_Dm2SgG0cRa2NX/view?usp=sharing"
+                        target="_blank">
+                        <button class="btn btn-warning">
+                            Descarga nuestro dossier informativo
+                        </button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js"
+        integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="/assets/js/logica.js"></script>
+
+</body>
+
+
+
+
+</html>

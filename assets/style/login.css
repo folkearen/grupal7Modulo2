@@ -1,0 +1,67 @@
+.bg-darky {
+    background-color: #020305 !important;
+}
+
+.form-container .form-group input::placeholder {
+  opacity: 0.1;
+  color: #fff;
+}
+
+.form-container {
+    background: linear-gradient(#020305, #151f33) padding-box,
+                linear-gradient(145deg, transparent 35%,#ff821c, #4372a8) border-box;
+    border: 2px solid transparent;
+    border-radius: 16px;
+  }
+
+  .form-container button:active {
+    scale: 0.95;
+  }
+
+  .form-container .form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .form-container .form-group input {
+    background-color: transparent;
+    border: 1px solid #414141;
+  }
+
+  .form-container .form-group input:focus {
+    outline: none;
+    border-color: #ff821c;
+  }
+
+.navbar-brand {
+  position: absolute;
+  opacity: 0.7;
+}
+
+.navbar-brand .bg-image {
+  width: 50px;
+  height: 50px;
+  background-image: url(../img/logo.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  
+}
+
+.navbar-brand h1 {
+  
+  font-size: 1rem;
+  font-weight: bold;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.navbar-brand p {
+  font-size: 0.8rem;
+  color: #ce6b11;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

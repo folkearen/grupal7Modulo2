@@ -1,0 +1,72 @@
+.card {
+    border-radius: 20px;
+    position: relative;
+
+    border: 1px solid #c3c6ce;
+    transition: 0.2s ease-out;
+    overflow: visible;
+
+}
+
+.card-producto {
+    position: relative;
+    height: 100%;
+}
+
+.card-text {
+    color: black;
+    gap: .5em;
+    place-content: center;
+}
+
+
+
+.text-body {
+    color: rgb(134, 134, 134);
+}
+   
+.card:hover {
+
+    border-color: #ce6b11; 
+    border-inline: 0.1rem solid #ce6b11 ;
+    box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25);
+    
+}
+
+
+/* .card-price {
+
+    margin-bottom: 5px;
+}
+.card-code {
+    margin-bottom: 0px;
+}
+
+
+.card-details {
+    position: absolute;
+    bottom: 0px;
+    margin-bottom: 5px;
+}
+
+
+.card-title {
+    margin-bottom: 15px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+} */
+
+
+/* .marquee {
+    animation: marquee 8s linear infinite;
+}
+
+@keyframes marquee {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+} */
